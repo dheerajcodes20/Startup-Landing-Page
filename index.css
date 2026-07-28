@@ -1,0 +1,490 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding-top: 90px;
+}
+
+section {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Header section  */
+
+header {
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px none;
+    z-index: 1000;
+}
+
+.header-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.logo {
+    color: #1a1d23;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-size: 24px;
+}
+
+.logo h2 span {
+    color: #1a1d23;
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+/* nav {
+    margin-left: 40px;
+} */
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 12px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: bold  ;
+    padding-right: 15px;
+
+}
+
+
+nav ul li a:hover {
+    color: blue;
+}
+
+
+/* Hero section  */
+
+
+
+.hero {
+    background-image: url("https://img.freepik.com/premium-vector/circuit-board-motherboard-blue-technology-background_322958-2527.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 180px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #38bdf8;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
+
+.btn-primary {
+    background: #1a1d23;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+
+.btn-primary:hover {
+    background: #3b82f6;
+}
+
+
+.btn-secondary {
+    border: 2px solid white;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-secondary:hover {
+    background: white;
+    color: #0F172A;
+}
+
+
+/* industries */
+
+.industries {
+    padding: 80px 10%;
+    background: #f5f7fa;
+}
+
+.industries h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #1a1d23;
+    margin-bottom: 45px;
+}
+
+.industry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+}
+
+.industry-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+    transition: .3s;
+}
+
+.industry-card:hover {
+    transform: translateY(-8px);
+}
+
+.industry-card h3 {
+    margin-bottom: 15px;
+    color: #1a1d23;
+}
+
+.industry-card p {
+    color: #666;
+}
+
+
+
+/* case studies */
+
+.case-studies {
+    padding: 80px 0;
+    text-align: center;
+    background: #ffffff;
+}
+
+.case-studies h2 {
+    font-size: 36px;
+    color: #1a1d23;
+    margin-bottom: 15px;
+}
+
+.case-studies .section-text {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+
+
+.case-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+
+
+.case-card {
+    background: #fff;
+    color: #1a1d23;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.case-card:hover {
+    transform: translateY(-8px);
+}
+
+.case-card h3 {
+    color: #1a1d23;
+    margin-bottom: 15px;
+}
+
+.case-card p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.case-card a {
+    text-decoration: none;
+    color: #fff;
+    background: #1a1d23;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.case-card a:hover {
+    background: #3b82f6;
+}
+
+
+/* stats section  */
+
+.stats {
+    padding: 80px 0;
+    text-align: center;
+    background: #f5f7fa;
+}
+
+.stats h2 {
+    font-size: 36px;
+    margin-bottom: 15 px;
+}
+
+.stats p {
+    font-size: 18px;
+    color: #4b5563;
+    margin-bottom: 50px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.counter {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1a1d23;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.testimonials {
+    padding: 80px 0;
+    background: #f9fafb;
+    text-align: center;
+
+}
+
+.testimonials h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #1a1d23;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card div {
+    font-size: 24px;
+    color: #fbbf24;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #1f2937;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #4b5563;
+}
+
+
+/* clients section  */
+
+.technologies {
+    padding: 80px 0;
+    text-align: center;
+    background: #1a1d23;
+}
+
+.technologies h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: white;
+
+}
+
+.technologies p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 50px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+
+}
+
+
+.logos a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.logos a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+/* Footer section  */
+
+footer {
+    background: #1a1d23;
+    color: white;
+    padding: 50px 30px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-box {
+    width: 220px;
+}
+
+.footer-box h2 {
+    margin-bottom: 15px;
+    color: #0d6efd;
+}
+
+.footer-box p {
+    margin: 10px 0;
+}
+
+.footer-box a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.footer-box a:hover {
+    color: #0d6efd;
+}
+
+hr {
+    margin: 30px 0 15px;
+}
+
+.copyright {
+    text-align: center;
+}
